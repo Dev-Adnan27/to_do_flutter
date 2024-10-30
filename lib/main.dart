@@ -178,7 +178,7 @@ class _TodoListState extends State<TodoList> {
                   .snapshots(),
               builder: (context, snapshot) {
                 if (snapshot.hasError) {
-                  print('Error: ${snapshot.error}');
+                  debugPrint('Error: ${snapshot.error}');
                   return Center(
                     child: Text('Error: ${snapshot.error}'),
                   );
